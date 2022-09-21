@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Traveling</title>
+	<link href="./estilos/style5.css" rel="stylesheet">
+</head>
+<body>
+		<!--header and nav start-->
+	
+	<header id="header">
+		<h1 class="logo"><div id="logoimagem"></div>Traveling</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="servicos.html">Serviços</a></li>
+				<li><a href="cadastro.html" id="cadastro">Cadastrar/Login</a></li>
+				<li><a href="comprar.html"><img src="./imagens/icons/shopping-cart.png" id="img">Pacotes</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!--header and nav end-->
+	<main id="main">
+	<!--section source travel-->
+	<section id="source_box">
+		<header class="box_source">
+			<div class="passagens_titulo">
+				<h2>Passagens Aéreas</h2>
+			</div>
+			<form name="form_source1" method="get" action="http://www.thiagomiranda.net/formulario.php">
+					<fieldset class="containboxs">
+						<div class="box_1">
+							<input type="radio" id="maca" name="fruta" value="maca" checked="">
+							<label for="maca">Ida e Volta</label>
+						</div>
+						<div class="box_2">
+							<input type="radio" id="uva" name="fruta" value="uva">
+							<label for="uva">Somente Ida</label>
+						</div>
+					</fieldset>
+			</form>
+		</header>
+		<main class="main_source">
+			<form name="form_source2" method="get" action="http://www.thiagomiranda.net/formulario.php">
+				<div>
+					<label>
+						<h4>Nome</h4>
+						<input type="text" name="usuario" placeholder="Insira Seu Nome">
+					</label>
+				</div>
+				<div><!--origem da viagem-->
+					<label>
+						<h4>Saída</h4>
+						<input type="text" name="usuario" placeholder="Local De Origem">
+					</label>
+				</div>
+				<div><!--destino da viagem-->
+					<label>
+						<h4>Destino</h4>
+						<input type="text" name="usuario" placeholder="Local De Destino">
+					</label>
+				</div>
+				<div><!--data ida-->
+					<label for="dia"><h4>Data</h4></label>
+    				<input type="date" name="dia" placeholder="Ida">
+				</div>
+				<button>Consultar Preço</button>
+			</form>
+		</main>
+	</section>
+	</main>
+	<footer>
+		<h2 class="logo"><div id="logoimagem"></div>Traveling</h2>
+		<div class="navegacao_footer">
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="servicos.html">Serviços</a></li>
+					<li><a href="cadastro.html" id="cadastro">Cadastre-se</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="social">
+			<div>
+				<a href="#"><img src="./imagens/icons/facebook.png">Facebook</a>
+			</div>
+			<div>
+				<a href="#"><img src="./imagens/icons/youtube.png">Youtube</a>
+			</div>
+			<div>
+				<a href="#"><img src="./imagens/icons/instagram.png">Instagram</a>
+			</div>
+		</div>
+		<section class="section_footer">
+			<div class="direitos">
+				<h5>&#169 Copyright 2022 by Lauanda Nobre.</h5>
+				<h6>Todos Os Direitos Reservados.</h6>
+				<h5 class="logo_footer"><div class="logoimg_footer"></div>Traveling</h5>
+			</div>
+		</section>
+	</footer>	
+</body>
+</html>
