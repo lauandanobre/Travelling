@@ -1,0 +1,338 @@
+@font-face{/*importação das fontes*/
+	font-family: "aboreto";
+	src: url('../fonts/AboretoRegular.ttf');
+}
+@font-face{
+	font-family: "poppins";
+	src: url('../fonts/Poppins-Medium.ttf');
+}
+
+*{/*reset*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "poppins";
+}
+html{
+
+	scroll-behavior: smooth;
+}
+
+body{
+	width: 100%;
+}
+/*========header and nav=========*/
+#header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 12vh;
+	background-color: #c2cbca61;
+}
+span{
+    color: darkorange;
+}
+.logoimagem{
+	display: inline-block;
+	background-image: url('../imagens/icons/location.png');
+	width: 33px;
+	height: 33px;
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+.logo{
+	font-size: 2rem;
+	font-family: "aboreto";
+	cursor: default;
+}
+header nav{
+	background-color: #b4c5c352;
+	width: 60%;
+	border-radius: 8px;
+}
+header nav ul{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 10vh;
+}
+nav ul li{
+	list-style:none;
+}
+ul li a{
+	text-decoration: none; 
+	color: #686868;
+	font-size: 0.9rem;
+	padding:5px;
+}
+ul li a:hover{
+	color: darkorange;
+}
+#cadastro{
+	color: black;
+}
+#cadastro:hover{
+	color: darkorange; 
+}
+#img{
+	width: 25px;
+	height: 25px;
+}
+#img:hover{
+	transition: 0.3s;
+	transform: scale(1.2);
+}
+/*========main source=========*/
+#main{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction: column;
+	width: 100%;
+	height: 90vh;
+	/*tela - 1360 por 768*/
+	background-image: url('../imagens/dubai.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+#fundo{
+    width: 550px;
+    height: 150px;
+    display: flex;
+    /*flex-direction: column;
+    justify-content: space-evenly;*/
+    align-items: center;
+}
+
+#titulo{
+	text-align: center;
+    font-size: 2.5rem;
+    cursor: default;
+    color: #000000d9;
+}
+
+/*=========source box pacotes====*/
+/*======header for box pacotes===*/
+#source_box{
+	max-width: 100%;
+	background-color: #c2cbca;
+	padding: 20px;
+}
+.passagens_titulo{
+	display: flex;
+	justify-content: space-around;
+}
+.box_source{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+.box_source form{
+	width: 100%;
+}
+.box_1{
+	margin-right: 20px;
+}
+.containboxs{
+	display: flex;
+	width: 80%;
+	justify-content: flex-start;
+	border: none;
+}
+.passagens_titulo{
+	width: 30%;
+}
+.passagens_titulo h2{
+	color: #000000d9;
+}
+/*=======main for pacotes========*/
+.main_source form{
+	display: flex;
+	max-width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 30px;
+}
+.main_source input{
+	width: 200px;
+	height: 35px;
+	border-radius: 20px;
+	border: 2px solid #afafaf;
+	padding-left: 15px;
+}
+.main_source button{
+	width: 100px;
+	height: 35px;
+	border: 2px solid #afafaf;
+	border-radius: 20px; 
+	color: #818181;
+}
+.main_source button:hover{
+	transition: 0.3s; 
+	border-color: white;
+}
+/*========section turism=========*/
+#container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: column;
+	background-color: #0f0f0f; 
+}
+#container div{
+	margin-top: 10px;
+}
+#container h3{
+	color: white;
+}
+
+#box{
+	display:flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.card{
+	background-color: darkorange;
+	border-radius: 5%;
+	text-align: center;
+	border: 2px solid darkorange;
+	margin: 40px 30px 30px 30px;/*onde estaa 30px é 20px*/
+}
+.card img{
+	width: 270px;
+	height: 250px;
+	border-top: 1px solid darkorange;
+	border-left: 1px solid darkorange;
+	border-right: 1px solid darkorange;
+	border-top-right-radius: 5%;
+	border-top-left-radius: 5%;
+}
+.card:hover{
+	border: 2px solid white;
+	background-color: white;
+	color: darkorange;
+}
+
+/*=========texto start============*/
+#text{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #cccc;
+}
+/*========table and formulary======*/
+
+.introtable{
+	font-size: 1.3rem;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+table{
+	margin: 30px;
+}
+table, table th,table td{
+	border: 2px solid darkorange;
+	border-collapse: collapse;
+	padding:10px;
+}
+.caixa{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+}
+
+#form_email{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 60%;
+	border: 2px solid darkorange;
+	margin: 30px;
+}
+
+#form_email h3{
+	text-align: center;
+	font-size: 1rem;
+	margin-top: 8px;
+}
+#form_email input{
+	width: 100%;
+	height: 35px;
+	padding-left: 20px;
+}
+#form_email button{
+	width: 35%;
+	height: 35px;
+}
+.div {
+	display: flex;
+	padding: 30px;
+}
+.btn2{
+	background-color: #cccccc;
+	border-radius: 20px;
+	width: 150px;
+	height:30px; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+    color: #0c0c0c;
+    margin: 15px;
+}
+/*=======footer========*/
+#footer_final{
+	background-color: #cccccc;
+	height: 25vh; 
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.logo_footer{
+	font-family: "aboreto";
+	cursor: default;
+}
+.logoimg_footer{
+	display: inline-block;
+	background-image: url('../imagens/icons/location.png');
+	width: 15px;
+	height: 15px;
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+#footer_final h5, #footer_final h6{
+	cursor: default;
+}
+.section_footer{
+	width: 40%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.social{
+	display: flex;
+	flex-direction: column; 
+	justify-content: center;
+}
+.social a{
+	color: #686868;
+	font-size: 1rem;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+.social a:hover{
+	color: orange;
+}
+.social img{
+	width: 25px;
+}

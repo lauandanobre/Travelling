@@ -1,0 +1,183 @@
+@font-face{/*importação das fontes*/
+	font-family: "aboreto";
+	src: url('../fonts/AboretoRegular.ttf');
+}
+@font-face{
+	font-family: "poppins";
+	src: url('../fonts/Poppins-Medium.ttf');
+}
+*{/*reset*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "poppins";
+}
+body{
+	width: 100%;
+}
+/*========header and nav=========*/
+#header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 12vh;
+	background-color: #c2cbca61;
+}
+span{
+    color: darkorange;
+}
+#logoimagem{
+	display: inline-block;
+	background-image: url('../imagens/icons/location.png');
+	width: 33px;
+	height: 33px;
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+#img:hover{
+	transition: 0.3s;
+	transform: scale(1.2);
+}
+.logo{
+	font-size: 2rem;
+	font-family: "aboreto";
+	cursor: default;
+}
+header nav{
+	background-color: #b4c5c352;
+	width: 60%;
+	border-radius: 8px;
+}
+header nav ul{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 10vh;
+}
+nav ul li{
+	list-style:none;
+}
+ul li a{
+	text-decoration: none; 
+	color: #686868;
+	font-size: 0.9rem;
+	padding:5px;
+}
+ul li a:hover{
+	color: orange;
+}
+#cadastro{
+	color: black;
+}
+#cadastro:hover{
+	color: orange; 
+}
+#img{
+	width: 25px;
+	height: 25px;
+}
+/*========main source and box=========*/
+#main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 90vh;
+	background-image: url('../imagens/casa.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+/*======section========*/
+#source_box{
+	background-color: #c2cbca;
+	padding: 30px;
+	border-radius: 20px;
+	height: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	width: 400px;
+}
+.
+.main_source form{
+	display: flex;
+	max-width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 30px;
+	align-items: center;
+}
+.main_source input{
+	width: 200px;
+	height: 35px;
+	border-radius: 20px;
+	border: 2px solid #afafaf;
+	padding-left: 15px;
+}
+.main_source button{
+	margin-top: 15px;
+	width: 150px;
+	height: 35px;
+	border: 2px solid #afafaf;
+	border-radius: 20px; 
+	color: #818181;
+}
+.main_source button:hover{
+	transition: 0.3s; 
+	border-color: white;
+}
+fieldset{
+	border: 1px solid white;
+	border-radius: 20px; 
+	padding: 5px; 
+}
+
+/*=======footer========*/
+footer{
+	background-color: #cccccc;
+	height: 25vh; 
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.logo_footer{
+	font-family: "aboreto";
+	cursor: default;
+}
+.logoimg_footer{
+	display: inline-block;
+	background-image: url('../imagens/icons/location.png');
+	width: 15px;
+	height: 15px;
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+footer h5, footer h6{
+	cursor: default;
+}
+.section_footer{
+	width: 40%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.social{
+	display: flex;
+	flex-direction: column; 
+	justify-content: center;
+}
+.social a{
+	color: #686868;
+	font-size: 1rem;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+.social a:hover{
+	color: orange;
+}
+.social img{
+	width: 25px;
+}
